@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FG Forrest - Zvirata</title>
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<!-- style -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/animals_by_spec.css">
+<link rel="stylesheet" href="css/contact.css">
+<!-- responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/218f2a7d41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- top  -->
+	<div id="top">
+		<!-- header -->
+		<div id="header">
+			<div class="wrapper">
+				<div class="header-content">
+					<a href="#" id="logo"><img src="img/logo.png" alt="logo"></a>
+					<nav id="the-nav">
+						<a href="#"<i class="fas fa-home nav-item"></i></a>
+						<a href="#" class="nav-item">Lvi</a>
+						<a href="#" class="nav-item">Zebry</a>
+						<a href="#" class="nav-item">Zirafy</a>
+						<a href="#" class="nav-item">Pumy</a>
+						<a href="#" class="nav-item">Kohouti</a>
+					</nav>
+					<div onclick="showNav()" id="burger">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- slider -->
+		<div id="slider">
+			<div class="wrapper">
+				<div class="slider-switcher">
+					<div onclick="changeImage(this.id);hasOver(this.id);" class="switcher-box over1" id="switcher-box-one">
+						<!-- <span>Lev</span> -->
+					</div>
+					<div onclick="changeImage(this.id);hasOver(this.id);" class="switcher-box" id="switcher-box-two">
+						<!-- <span>Zebra</span> -->
+					</div>
+					<div onclick="changeImage(this.id);hasOver(this.id);" class="switcher-box" id="switcher-box-three">
+						<!-- <span>Tygr</span> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- map -->
+	<div id="map">
+		<div class="wrapper">
+			<h2>Zvířata podle světadílu</h2>
+			<span class="sub-heading">Nuc et latinia est. Suspendisse portitor, ante sit amet laoreet omare.</span>
+			<div class="map-content">	
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+				<span class="map-animal">
+					<span class="map-animal-text">Lev Africky</span>
+					<span class="triangle"></span>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- news -->
+	<div id="news">
+		<div class="wrapper">
+			<div class="heading-div">
+				<span class="heading-span"></span>
+				<h2>Aktuality</h2>
+				<span class="heading-span"></span>
+			</div>
+			<div class="news-content">
+				<div class="news-box">
+					<img src=img/news_3.jpg alt="news_1">
+					<div class="news-box-text">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Quisque et purus magna. Sed egrestas facilisis fringlia.</p>
+					</div>
+				</div>
+				<div class="news-box" id="news-box-even">
+					<img src=img/news_2.jpg alt="news_1">
+					<div class="news-box-text">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Quisque et purus magna. Sed egrestas facilisis fringlia.</p>
+					</div>
+				</div>
+				<div class="news-box">
+					<img src=img/news_3.jpg alt="news_1">
+					<div class="news-box-text">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Quisque et purus magna. Sed egrestas facilisis fringlia.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- contact -->
+	<div id="contact">
+		<div class="wrapper">
+			<div class="heading-div">
+				<span class="heading-span"></span>
+				<h2>Novinky emailem</h2>
+				<span class="heading-span"></span>
+			</div>
+			<form>
+				<label for="femail">Vas email: </label>
+  				<input type="text" id="femail" name="femail"><br>
+  				<label for="fcountries">Vase zeme</label>
+				<select id="fcountries" name="fcountries">
+  					<option value="fcr">CR</option>
+  					<option value="fengland">Anglie</option>
+  					<option value="fitaly">Italie</option>
+  					<option value="ffrance">Francie</option>
+				</select>
+			</form>
+			<a href="#">Chci novinky</a>
+		</div>
+	</div>
+	<!-- animals-by-spec -->
+	<div id="animals-by-spec">
+		<div class="wrapper">
+			<div class="heading-div">
+				<span class="heading-span"></span>
+				<h2>Aktuality</h2>
+				<span class="heading-span"></span>
+			</div>
+			<div class="animals-by-spec-content">
+				<div class="scrollbar-container">
+					<div class="scrollbar">
+						<div class="scrollbar-box">
+						</div>
+						<div class="scrollbar-box">
+						</div>
+						<div class="scrollbar-box">
+						</div>
+						<div class="scrollbar-box">
+						</div>
+						<div class="scrollbar-box">
+						</div>
+						<div class="scrollbar-box">
+						</div>
+					</div>
+				</div>
+				<div onclick="slideLeft()" class="scrollbar-arrow" id="scrollbar-arrow-left"></div>
+				<div onclick="slideRight()" class="scrollbar-arrow" id="scrollbar-arrow-right"></div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<div class="wrapper">
+			<div class="footer-content">
+				<span id="copyright">&copy 2012 Animal Lovers</span>
+				<img id="logo-footer" src="img/fg.png" alt="footer_logo">
+			</div>
+		</div>
+	</div>
+	<!-- javascript -->
+	<script src="js/header.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>

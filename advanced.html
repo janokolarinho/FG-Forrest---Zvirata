@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FGF - Advanced</title>
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<!-- style -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/advanced.css">
+<!-- responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body-advanced">
+	<!-- header -->
+		<div id="header" style="background-color: var(--main_black);">
+			<div class="wrapper">
+				<div class="header-content">
+					<img id="logo" src="img/logo.png" alt="logo">
+					<nav>
+						<a href="#"<i class="fas fa-home nav-item"></i></a>
+						<a href="#" class="nav-item">Lvi</a>
+						<a href="#" class="nav-item">Zebry</a>
+						<a href="#" class="nav-item">Zirafy</a>
+						<a href="#" class="nav-item">Pumy</a>
+						<a href="#" class="nav-item">Kohouti</a>
+					</nav>
+					<div class="burger">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- advanced-page -->
+	<div id="advanced-page">
+		<div class="wrapper">
+			<div class="advanced-content">
+				<div class="advanced-table">
+					<div class="table-row first-row praha">
+						<span class="row-name">Jmeno</span>
+						<span class="row-city">Mesto</span>
+					</div>
+					<div id="praha1"  class="table-row table-row-odd praha">
+						<span class="row-name">Jan Novak</span>
+						<span class="row-city">Praha</span>
+					</div>
+					<div id="ostrava1" class="table-row table-row-even ostrava">
+						<span class="row-name">Petr Dlouhy</span>
+						<span class="row-city">Ostrava</span>
+					</div>
+					<div id="brno1" class="table-row table-row-odd brno">
+						<span class="row-name">Filip Mazany</span>
+						<span class="row-city">Brno</span>
+					</div>
+					<div id="praha2" class="table-row table-row-even praha">
+						<span class="row-name">Jaroslav Velky</span>
+						<span class="row-city">Praha</span>
+					</div>
+					<div id="brno2" class="table-row table-row-odd brno">
+						<span class="row-name">Dan Novy</span>
+						<span class="row-city">Brno</span>
+					</div>
+				</div>
+				<div class="advanced-filter">
+					<div class="the-filter filter-first">
+						<input onclick="toggleAllCities()" type="checkbox" id="praha" name="praha" value="Praha">
+						<label  for="praha"></label>
+						<span>Vsechna mesta</span>
+					</div>
+					<div class="filter-container">
+					<div class="the-filter">
+						<input onclick="togglePraha()" type="checkbox" id="praha" name="praha" value="Praha">
+						<label  for="praha"></label>
+						<span>Praha</span>
+					</div>
+					<div class="the-filter">
+						<input onclick="toggleOstrava()" type="checkbox" id="ostrava" name="ostrava" value="Ostrava">
+						<span>Ostrava</span>
+						<label  for="ostrava"></label>
+					</div>
+					<div class="the-filter">
+						<input onclick="toggleBrno()" type="checkbox" id="brno" name="brno" value="Brno">
+						<span>Brno</span>
+						<label  for="brno"></label>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<div class="wrapper">
+			<div class="footer-content">
+				<span id="copyright">&copy 2012 Animal Lovers</span>
+				<img id="logo-footer" src="img/fg.png" alt="footer_logo">
+			</div>
+		</div>
+	</div>
+	<!-- javascript -->
+	<script src="js/advanced.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+#animals-by-spec {
+	margin-bottom: 60px;
+}
+
+.animals-by-spec-content {
+	position: relative;
+}
+
+.scrollbar-container {
+	overflow-y: auto;
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+}
+
+.scrollbar {
+	width: 1050px;
+}
+
+.scrollbar-arrow {
+	width: 20px;
+	height: 34px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 23px;
+}
+
+#scrollbar-arrow-left {
+	background-image: url("../img/arrow.png");
+	left: 0;
+}
+
+#scrollbar-arrow-left:active {
+	background-image: url("../img/arrow_active.png");
+	-webkit-transform:rotate(180deg);
+  	-moz-transform: rotate(180deg);
+  	-ms-transform: rotate(180deg);
+  	-o-transform: rotate(180deg);
+  	transform: rotate(180deg);
+}
+
+#scrollbar-arrow-right {
+	background-image: url("../img/arrow.png");
+	-webkit-transform:rotate(180deg);
+  	-moz-transform: rotate(180deg);
+  	-ms-transform: rotate(180deg);
+  	-o-transform: rotate(180deg);
+  	transform: rotate(180deg);
+  	right: 0;
+}
+
+#scrollbar-arrow-right:active {
+	background-image: url("../img/arrow_active.png");
+	-webkit-transform:rotate(360deg);
+  	-moz-transform: rotate(360deg);
+  	-ms-transform: rotate(360deg);
+  	-o-transform: rotate(360deg);
+  	transform: rotate(360deg);
+}
+
+
+
+
+.scrollbar-box {
+	width: 150px;
+	height: 100px;
+	background-image: url(../img/panda_scroll_tmp.jpeg);
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+.scrollbar-box:first-child {
+	background-image: url(../img/animals_spec_2.jpg);
+}
+
+.scrollbar-box:nth-child(2) {
+	background-image: url(../img/animals_spec_2.jpg);
+}
+
+.scrollbar-box:nth-child(3) {
+	background-image: url(../img/animals_spec_3.jpg);
+}
+
+.scrollbar-box:nth-child(4) {
+	background-image: url(../img/animals_spec_4.jpg);
+}
+
+.scrollbar-box:nth-child(5) {
+	background-image: url(../img/animals_spec_5.jpg);
+}
+
+.scrollbar-box:nth-child(6) {
+	background-image: url(../img/animals_spec_6.jpg);
+}
+
+@media (min-width: 980px) {
+	
+	.scrollbar-container {
+		width: 900px;
+	}
+
+	.scrollbar {
+		width: 1450px;
+	}
+
+	.scrollbar-box {
+		width: 200px;
+		height: 80px;
+		margin-left: 15px;
+	}
+
+	.scrollbar-box:first-child {
+		margin-left: unset;
+	}
+}

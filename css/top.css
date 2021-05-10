@@ -1,0 +1,14 @@
+#top {
+	background-image: url("../img/top_bgr.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	position: relative;
+}
+
+@media(min-width: 980px) {
+	#top {
+		height: 410px;
+		margin-bottom: 66px;
+	}
+}

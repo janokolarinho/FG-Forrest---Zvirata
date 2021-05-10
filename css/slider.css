@@ -1,0 +1,102 @@
+#slider {
+	background-image: url(../img/lion_big.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 300px;
+	margin-top: 20px;
+}
+
+#slider.slide1 {
+	background-image: url(../img/lion_big.jpg);
+}
+
+#slider.slide2 {
+	background-image: url(../img/zebra_big.jpg);
+}
+
+#slider.slide3 {
+	background-image: url(../img/tiger_big.jpg);
+}
+
+
+.slider-switcher {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+}
+
+.switcher-box {
+	width: 90px;
+	height: 50px;
+	background-image: url(../img/zebra_big_tmp.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.switcher-box:nth-child(3) {
+	margin-right: unset;
+}
+
+.switcher-box span {
+	line-height: 40px;
+}
+
+#switcher-box-one {
+	background-image: url(../img/lion_small.jpg);
+}
+
+#switcher-box-two {
+	background-image: url(../img/zebra_small.jpg);
+}
+
+#switcher-box-three {
+	background-image: url(../img/tiger_small.jpg);
+}
+
+#switcher-box-one.switcher-box.over1 {
+	background-image: url(../img/lion_small_over.png);	
+}
+
+#switcher-box-two.switcher-box.over2 {
+	background-image: url(../img/zebra_small_over.png);	
+}
+
+#switcher-box-three.switcher-box.over3 {
+	background-image: url(../img/tiger_small_over.png);	
+}
+
+
+
+@media(min-width: 980px) {
+	#slider {
+		width: 90%;
+		margin: 0px auto;
+		position: absolute;
+		top: 79px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 378px;
+		margin-top: unset;
+	}
+
+	.switcher-box {
+		width: 190px;
+		height: 78px;
+		margin-left: 15px;
+	}
+
+	.switcher-box:first-child {
+		margin-left: unset;
+	}
+
+	.switcher-box span {
+		line-height: 120px;
+	}
+
+}
